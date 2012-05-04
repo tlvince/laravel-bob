@@ -47,7 +47,7 @@ produces :
 {% highlight php startinline %}
 <?php
 
-class User extends Eloquent\Model {
+class User extends Eloquent {
 
 	public static $timestamps = true;
 
