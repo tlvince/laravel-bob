@@ -63,8 +63,8 @@ class Generators_View extends Generator
 		// added the file to be created
 		$this->writer->create_file(
 			'View',
-			$this->class_path.$this->lower.EXT,
-			$this->bundle_path.'views/'.$this->class_path.$this->lower.EXT,
+			$this->class_path.$this->lower.$this->_view_extension,
+			$this->bundle_path.'views/'.$this->class_path.$this->lower.$this->_view_extension,
 			Common::replace_markers($markers, $template)
 		);
 	}
