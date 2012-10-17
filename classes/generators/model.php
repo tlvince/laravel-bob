@@ -103,9 +103,9 @@ class Generators_Model extends Generator
 				case "ho":
 					$relationship_template = Common::load_template('model/has_one.tpl');
 					break;
-				case "has_and_belongs_to_many":
+				case "has_many_and_belongs_to":
 				case "hbm":
-					$relationship_template = Common::load_template('model/has_and_belongs_to_many.tpl');
+					$relationship_template = Common::load_template('model/has_many_and_belongs_to.tpl');
 					break;
 			}
 
