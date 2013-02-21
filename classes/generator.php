@@ -123,8 +123,14 @@ class Generator
 				$this->bundle = DEFAULT_BUNDLE;
 			}
 
-			// set bundle path from bundle name
-			$this->bundle_path = Bundle::path($this->bundle);
+			// if we got the prefix command line switch
+			if (Common::config('prefix') && is_dir(Common::config('prefix'))) {
+				$this->bundle_path = Common::config('prefix') . '/';
+			}
+			else {
+				// set bundle path from bundle name
+				$this->bundle_path = Bundle::path($this->bundle);
+			}
 
 			// if we have a multi-level path
 			if(strstr($args[0], '.'))

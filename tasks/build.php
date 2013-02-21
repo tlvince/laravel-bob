@@ -106,6 +106,7 @@ class Bob_Build_Task extends Task
 		Common::log("\n\n{w}Arguments :");
 		Common::log("\t{g}--force\n\t{w}Force overwrite of existing files and folders.");
 		Common::log("\t{g}--pretend\n\t{w}Show the result of a generation without writing to the filesystem.");																						
+		Common::log("\t{g}--prefix=[path]\n\t{w}An arbitrary path to write generated files within.");
 		exit();
 	}
 }
